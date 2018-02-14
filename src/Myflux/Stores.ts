@@ -32,8 +32,4 @@ export default class ListStore extends BaseStore<ListActionType> {
     registerDispatch(): void {
         ListDispatch.registerStore(this);
     }
-
-    add(name: string) {
-        this.callBack({ type: "Add", name });
-    }
 }
